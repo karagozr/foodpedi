@@ -1,0 +1,11 @@
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: auto; 
+    height: auto;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: black;
+}

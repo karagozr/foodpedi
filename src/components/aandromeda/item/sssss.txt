@@ -1,0 +1,58 @@
+ {replyComments ? (
+                                    replyComments.map(({ comment, rate, username, commentDate }, index2) => {
+                                        return (
+                                            <ul className="comments-reply" key={index2}>
+                                                <li>
+                                                    <div className="comment">
+                                                        {/* Yorumu cevaplayanın avatarı */}
+                                                        {/* <img className="avatar__img" alt="Comment" src={item2.img} /> */}
+                                                        <div className="comment-body">
+                                                            <div className="meta-data">
+                                                                {/* Yorum cevaplayanın ismi */}
+                                                                <span className="comment__author">
+                                                                    {username}
+                                                                </span>
+                                                                {/* Yorum cevabı tarihi */}
+
+                                                                {/* Yorum cevabı yıldızı */}
+                                                                {/* <div className="rating-rating">
+                                                                    {commentRate()}
+                                                                </div> */}
+                                                            </div>
+                                                            {/* Yorum içeriği */}
+                                                            <p className="comment-content">
+                                                                {comment}
+                                                            </p>
+                                                            <span className="comment__date">
+                                                                {commentDate}
+                                                            </span>
+                                                            <div className='comment-reply d-flex justify-content-between align-items-center'>
+                                                                {account.user.username === username && <Link className="theme-btn comment__btn" to="#" style={{ color: "#08ad3b" }}
+                                                                    onClick={e => addReplyComment(id)} >
+                                                                    <i className="la d-inline-block"><RiEditLine /></i> Yorumu Düzenle
+                                                                </Link>}
+                                                            </div>
+
+                                                            {/* Yorum cevabına cevap */}
+                                                            {/* <div
+                                                                className="comment-reply d-flex justify-content-between align-item2s-center">
+                                                                <Link className="theme-btn comment__btn" to="#">
+                                                                    <i className="la d-inline-block">{item2.replyBtnIcon}</i> {item2.replyBtn}
+                                                                </Link>
+                                                                <p className="feedback-box">
+                                                                    Was this review?
+                                                                    <button type="button" className="theme-btn">
+                                                                        <i className="la d-inline-block"><FiThumbsUp /></i> Helpful
+                                                                    </button>
+                                                                    <button type="button" className="theme-btn">
+                                                                        <i className="la d-inline-block"><FaRegSmile /></i> Funny
+                                                                    </button>
+                                                                </p>
+                                                            </div> */}
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        )
+                                    })
+                                ) : null}

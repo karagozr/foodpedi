@@ -1,0 +1,9 @@
+.btn-auth-login {
+    --bs-bg-opacity: 1;
+    background-color: #29932f6e;
+}
+
+.btn-auth-logout {
+    --bs-bg-opacity: 1;
+    background-color: #ff131359;
+}

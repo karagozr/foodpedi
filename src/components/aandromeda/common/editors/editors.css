@@ -1,0 +1,52 @@
+
+.image-close:hover {background-color: #3e8e41}
+
+.image-close:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.input-img-list{
+  max-width: 105px !important;
+  max-height: 105px !important;
+  min-width: 105px ;
+  min-height: 105px;
+  position: relative;
+  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px !important;
+  border-radius: 5px;
+  border: 3px solid transparent;
+}
+
+.input-img-selected{
+  border-color: red;
+}
+
+.delete-img-from-list{
+  width: 23px;
+  line-height: 23px;
+  border: none;
+  margin-top: 0px;
+  margin-right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: white;
+  border-radius: 12px;
+  background: red;
+}
+
+.input-img-list >img{
+  display: block;
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
